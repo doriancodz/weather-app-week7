@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather</title>
   </head>
   <body>
@@ -19,10 +20,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>New York</h1>
+            <h1 id="city">New York</h1>
             <ul>
               <li>Wednesday 22:34</li>
-              <li>Clear</li>
+              <li id="description">Clear</li>
             </ul>
           </div>
           <div class="row">
@@ -41,9 +42,8 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 22%</li>
-                <li>Wind: 3 m/s</li>
+                <li>Humidity: <span id="humidity"> 22</span>%</li>
+                <li>Wind: <span id="wind">3 </span> m/s</li>
               </ul>
             </div>
           </div>
