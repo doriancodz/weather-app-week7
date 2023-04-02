@@ -63,12 +63,16 @@ li::first-letter {
 }
 
 #celsius-link {
+  text-decoration: none;
+}
+
+.weather-temperature .active {
   color: black;
   text-decoration: none;
   cursor: default;
 }
 
-#celsius-link:hover {
+.weather-temperature .active:hover {
   text-decoration: none;
   cursor: default;
 }
